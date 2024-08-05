@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Our System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .intro-text {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header-image {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .header-image img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .button-container a {
+      display: inline-block;
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin-right: 10px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .button-container a:hover {
+      background-color: #05B882;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-image">
+      <img src="{{ url_for('static', filename='images/welcome.jpg') }}" alt="Header Image">
+    </div>
+    <h1>Welcome to Our Blockchain System</h1>
+    <div class="intro-text">
+      <p>Discover the power of our system and experience seamless access to advanced features.</p>
+      <p>Join us today and take advantage of our services!</p>
+    </div>
+    <div class="button-container">
+      <a href="/signup">Signup</a>
+      <a href="/login">Login</a>
+    </div>
+  </div>
+</body>
+</html>
