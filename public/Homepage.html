@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="/static/css/homepage.css"> <!-- Link to external CSS file -->
+
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="profile-section">
+      <img id="profilePicture" class="profile-picture" src="/static/images/Anonymous_emblem.svg.png" alt="Profile Picture">
+      <h2>Welcome, <span id="metamaskAddress">Loading...</span></h2>
+    </div>
+    <h3>Menu</h3>
+    <a href="/homepage">Home</a>
+    <a href="/wallet">Wallet</a>
+    <a href="/upload">Upload</a>
+    <a href="/send">Send</a>
+    <a href="#">Account Settings</a>
+    <a href="/logout">Logout</a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <div class="header">
+      <h1>Home Page</h1>
+    </div>
+
+    <div class="w3-container crypto-section">
+      <h2>Text tampering prevention and review system using Blockchain</h2>
+      <p>Stay updated with the latest news and trends in the world of cryptocurrencies.</p>
+
+      <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+          <div class="crypto-icon">&#x1F4B8;</div>
+          <h3>Bitcoin</h3>
+          <p>Bitcoin is the first decentralized digital currency.</p>
+        </div>
+        <div class="w3-third">
+          <div class="crypto-icon">&#x1F4B5;</div>
+          <h3>Ethereum</h3>
+          <p>Ethereum is a decentralized, open-source blockchain platform.</p>
+        </div>
+        <div class="w3-third">
+          <div class="crypto-icon">&#x1F511;</div>
+          <h3>Ripple</h3>
+          <p>Ripple is both a platform and a currency for global payments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript to handle profile picture click and NFT selection -->
+  <script src = "/js/homepage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="/static/css/styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+  <div class="sidebar">
+    <div class="profile-section">
+      <img class="profile-picture" src="/static/images/Anonymous_emblem.svg.png" alt="Profile Picture" onclick="selectNFT()">
+      <h2>Welcome, <span id="metamaskAddress">Loading...</span></h2>
+    </div>
+    <h3>Menu</h3>
+    <a href="/homepage">Home</a>
+    <a href="/wallet">Wallet</a>
+    <a href="/upload">Upload</a>
+    <a href="/send">Send</a>
+    <a href="#">Account Settings</a>
+    <a href="/logout">Logout</a>
+  </div>
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  <!-- Include JavaScript files -->
+  <script src="/js/selectNFT.js"></script>
+  <script src="/js/homepage.js"></script>
+</body>
+</html>
